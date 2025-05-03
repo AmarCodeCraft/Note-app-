@@ -2,7 +2,7 @@
 
 A simple note app built using Express as the backend and Ejs as the templating engine.
 
-You can see my website here: https://note-app-ejs.up.railway.app/
+You can see my website here: https://note-app-ejs.up.railway.app
 
 ### Features
 
