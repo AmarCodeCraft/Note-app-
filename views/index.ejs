@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note app || ejs </title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900">
+        <div class="form p-10 text-white">
+            <form action="/create" method="post">
+                <input class="block w-full rounded-md text-white font-semibold outline-none px-5 py-3 bg-zinc-800 " type="text" placeholder="title goes here" name="title">
+                <textarea class="block w-full rounded-md text-white font-semibold outline-none mt-2 px-5 py-3 bg-zinc-800 resize-none" placeholder="note goes here" name="details"></textarea>
+                <button class="mt-2 bg-blue-600 px-5 py-2 rounded-md cursor-pointer">Create Task</button>
+            </form>
+        </div>
+        <div class="tasks p-10 flex flex-wrap gap-3">
+            <% if(files.length > 0){ %>
+                <% files.forEach(function(val){ %>
+                    <div class="task  w-72 px-3 py-4 bg-zinc-800 rounded-md text-white">
+                        <h1 class="text-2xl font-bold text-lg tracking-wider"><%= val %></h1>
+                        <a class="text-blue-500 inline-block mt-3 cursor-pointer" href="/file/<%= val %>">Read More</a>
+                    </div>
+              <% }) %>
+         <%   } else{ %>  
+                <h3 class="text-zinc-400 text-3xl font-bold">No tasks found</h3>
+         <%    } %>
+
+            
+            
+        </div>
+    </div>
+</body>
+</html>
