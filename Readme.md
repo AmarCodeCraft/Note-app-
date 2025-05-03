@@ -12,11 +12,9 @@ You can see my website here: https://github.io/Note-App-using-Express-and-Ejs/
 
 ### Screenshots
 
-![Home Page](https://github.com/AmarCodeCraft/Note-app-/tree/main/public/asserts/Screenshot (note app).png)
+![Home Page](https://github.com/AmarCodeCraft/Note-app-/blob/main/public/asserts/Screenshot%20(note%20app).png)
 
-![Create Note](https://github.com/AmarCodeCraft/Note-app-/tree/main/public/asserts/Screenshot Create .png)
-
-![Read Note](https://github.com/AmarCodeCraft/Note-app-/tree/main/public/asserts/Screenshot Create .png)
+![Read Note](https://github.com/AmarCodeCraft/Note-app-/blob/main/public/asserts/Screenshot%20Create%20.png)
 
 ### Installation
 
